@@ -46,3 +46,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-304 — Build Invoice Viewer component
+
+## 2026-06-30 — T-304 — Frontend Agent
+
+**Completed:** Created InvoiceView.tsx with invoice card showing amount, description, status badge (pending/paid/failed), and embedded iframe for Xendit invoice URL. Empty state placeholder shown when no invoice is active.
+
+**Decisions:** Combined invoice display with simulate buttons in a single component. Used Indonesian currency formatting (IDR). Status badges use color-coded styling (yellow/green/red).
+
+**Blockers:** None
+
+**Next:** T-305 — Implement "Simulate Success" button

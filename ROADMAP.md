@@ -38,7 +38,7 @@
 | 🟢 Done | T-301: Update layout & branding | 2026-06-30 | `f9b2228` |
 | 🟢 Done | T-302: Build split-screen layout | 2026-06-30 | `0cdbeda` |
 | 🟢 Done | T-303: Build Chat Room component | 2026-06-30 | `de3445a` |
-| 🔴 Not Started | T-304: Build Invoice Viewer component | | |
+| 🟢 Done | T-304: Build Invoice Viewer component | 2026-06-30 | `6c9f07a` |
 | 🔴 Not Started | T-305: Implement "Simulate Success" button | | |
 | 🔴 Not Started | T-306: Create chat API client service | | |
 | 🔴 Not Started | T-307: Wire page.tsx with components | | |
