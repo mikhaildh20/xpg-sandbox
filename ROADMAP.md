@@ -40,7 +40,7 @@
 | 🟢 Done | T-303: Build Chat Room component | 2026-06-30 | `de3445a` |
 | 🟢 Done | T-304: Build Invoice Viewer component | 2026-06-30 | `6c9f07a` |
 | 🟢 Done | T-305: Implement "Simulate Success" button | 2026-06-30 | `b48455d` |
-| 🔴 Not Started | T-306: Create chat API client service | | |
+| 🟢 Done | T-306: Create chat API client service | 2026-06-30 | `713b8bd` |
 | 🔴 Not Started | T-307: Wire page.tsx with components | | |
 
 ## Phase 2 — Integration

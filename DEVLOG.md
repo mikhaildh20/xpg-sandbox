@@ -66,3 +66,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-306 — Create chat API client service
+
+## 2026-06-30 — T-306 — Frontend Agent
+
+**Completed:** Created chatApi.ts service with typed interfaces (ChatRequest, ChatResponse, SimulateRequest, SimulateResponse), sendMessage() and simulatePayment() functions, error handling with ChatApiError class, timeout support via AbortController, and configurable BASE_URL via NEXT_PUBLIC_API_URL env var.
+
+**Decisions:** Used generic request() helper for DRY HTTP logic. Custom ChatApiError class for structured error handling. Timeout of 15s for requests.
+
+**Blockers:** None
+
+**Next:** T-307 — Wire page.tsx with all components
