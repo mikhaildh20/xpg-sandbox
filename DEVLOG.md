@@ -16,3 +16,18 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-002 — Set up branch strategy (create develop branch)
+
+---
+
+## 2026-06-30 — T-002 — Orchestrator
+
+**Completed:** Created `develop` branch from `main`. Branch naming convention established: `feature/{stream-name}`, `fix/{T-XXX}`.
+
+**Decisions:**
+- `main` is protected (merge only from `develop`)
+- Feature branches merge to `develop` via squash-merge
+- Three parallel feature branches needed: `feature/backend-api`, `feature/ai-agent`, `feature/frontend-ui`
+
+**Blockers:** None
+
+**Next:** T-003 — Verify environment & configuration

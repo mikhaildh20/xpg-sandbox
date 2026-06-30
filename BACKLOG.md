@@ -7,7 +7,7 @@
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
 | T-001 | Create tracking documents | Must | ✅ Done | Orchestrator | |
-| T-002 | Set up branch strategy | Must | 🔴 Not Started | Orchestrator | |
+| T-002 | Set up branch strategy | Must | ✅ Done | Orchestrator | develop branch created from main |
 | T-003 | Verify environment & configuration | Must | 🔴 Not Started | Orchestrator | |
 
 ## Phase 1A — Backend Express API
