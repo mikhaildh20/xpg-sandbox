@@ -16,3 +16,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-002 — Set up branch strategy (create develop branch)
+
+## 2026-06-30 — T-301 — Frontend Agent
+
+**Completed:** Updated layout.tsx with new metadata title/description, rewrote globals.css with sandbox theme (blues, greens, success colors) and split-layout grid utility.
+
+**Decisions:** Used CSS grid for split layout instead of flexbox for more natural equal-column split. Kept layout.tsx as server component (no 'use client' needed).
+
+**Blockers:** None
+
+**Next:** T-302 — Build split-screen layout
