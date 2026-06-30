@@ -11,6 +11,8 @@ app.use(express.json());
 app.use('/api/health', require('./routes/health'));
 app.use('/api/chat', require('./routes/chat'));
 app.use('/api/webhook/xendit', require('./routes/webhook'));
+app.use('/api/simulate', require('./routes/simulate'));
+app.use('/api/simulate', require('./routes/simulate'));
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

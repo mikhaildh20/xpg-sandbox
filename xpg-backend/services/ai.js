@@ -2,13 +2,19 @@ const OpenAI = require('openai');
 const { createInvoice } = require('./xendit');
 const { createOrder, createTransaction } = require('./storage');
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-let openai = null;
+const AI_API_KEY = process.env.AI_API_KEY || process.env.OPENAI_API_KEY;
+const AI_BASE_URL = process.env.AI_BASE_URL || 'https://api.mimo-v2.com/v1';
+const AI_MODEL = process.env.AI_MODEL || 'mimo-v2-pro';
+
+let client = null;
 function getClient() {
-  if (!openai && OPENAI_API_KEY) {
-    openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+  if (!client && AI_API_KEY) {
+    client = new OpenAI({
+      apiKey: AI_API_KEY,
+      baseURL: AI_BASE_URL,
+    });
   }
-  return openai;
+  return client;
 }
 
 const SYSTEM_PROMPT = `Kamu adalah XenBot, asisten pembayaran virtual yang profesional, solutif, dan ringkas. Gunakan Bahasa Indonesia yang santai tapi sopan.
@@ -56,18 +62,18 @@ function extractDescriptionFromText(text) {
 }
 
 async function handleMessage(userMessage) {
-  const client = getClient();
+  const ai = getClient();
 
-  if (client) {
+  if (ai) {
     try {
-      const response = await client.chat.completions.create({
-        model: process.env.OPENAI_MODEL || 'gpt-4o',
+      const response = await ai.chat.completions.create({
+        model: AI_MODEL,
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           { role: 'user', content: userMessage }
         ],
         tools: TOOLS,
-        tool_choice: 'auto'
+        tool_choice: 'auto',
       });
 
       const choice = response.choices[0];
@@ -82,7 +88,10 @@ async function handleMessage(userMessage) {
 
       return { reply: choice.message.content || 'Maaf, saya tidak dapat memproses permintaan Anda.' };
     } catch (error) {
-      console.error('OpenAI error:', error.message);
+      console.error('AI API error:', error.message);
+      if (error.status) {
+        console.error('Status:', error.status, 'Details:', JSON.stringify(error.data || {}));
+      }
     }
   }
 
@@ -124,6 +133,9 @@ async function executeInvoice(amount, description) {
     return {
       reply: `Baik, saya sudah membuatkan invoice untuk *${description}* sebesar *Rp${amount.toLocaleString('id-ID')}*. Silakan klik link di bawah untuk melihat detail pembayaran (lingkungan Sandbox).`,
       invoice_url: invoice.invoice_url,
+      amount,
+      description,
+      status: invoice.status,
       order_id: order.order_id
     };
   } catch (error) {
