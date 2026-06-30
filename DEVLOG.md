@@ -76,3 +76,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-307 — Wire page.tsx with all components
+
+## 2026-06-30 — T-307 — Frontend Agent
+
+**Completed:** Rewrote page.tsx as client component with full state management. Removed Supabase todos query. Composes SplitLayout (left: ChatRoom, right: InvoiceView). Handles sendMessage -> API call -> bot reply + invoice. Handles simulateSuccess/Failed -> API call -> status update + bot confirmation.
+
+**Decisions:** Made page.tsx a client component ('use client') because it needs useState/useCallback for interactive state. Uses useCallback for memoized handlers.
+
+**Blockers:** None
+
+**Next:** Final build verification

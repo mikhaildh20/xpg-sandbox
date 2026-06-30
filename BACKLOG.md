@@ -41,7 +41,7 @@
 | T-304 | Build Invoice Viewer component | Must | ✅ Done | Frontend Agent | |
 | T-305 | Implement "Simulate Success" button | Must | ✅ Done | Frontend Agent | |
 | T-306 | Create chat API client service | Must | ✅ Done | Frontend Agent | |
-| T-307 | Wire page.tsx with components | Must | 🔴 Not Started | Frontend Agent | |
+| T-307 | Wire page.tsx with components | Must | ✅ Done | Frontend Agent | |
 
 ## Phase 2 — Integration
 
