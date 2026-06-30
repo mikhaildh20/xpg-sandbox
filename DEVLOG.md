@@ -86,3 +86,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** Final build verification
+
+## 2026-06-30 — T-307b — Frontend Agent
+
+**Completed:** Build verification passed successfully after removing unused Supabase utils that referenced uninstalled @supabase/ssr package. All 7 tasks complete, build produces clean output.
+
+**Decisions:** Removed old Supabase utility files since they are no longer needed by the frontend (page.tsx now uses custom chatApi service).
+
+**Blockers:** None
+
+**Next:** Phase 2 — Integration (T-401 onward)
