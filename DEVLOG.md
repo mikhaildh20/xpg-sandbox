@@ -164,7 +164,7 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 
 ## 2026-06-30 — T-401 through T-404 — Orchestrator
 
-**Completed:** Integration phase — switched AI from OpenAI to Mimo (`api.mimo-v2.com/v1`, model `mimo-v2-pro`). Added `POST /api/simulate` endpoint for payment simulation. Updated env with real credentials (Mimo, Xendit, Supabase). Frontend build passed successfully.
+**Completed:** Integration phase — switched AI from OpenAI to Mimo (`api.mimo-v2.com/v1`, model `mimo-v2.5`). Added `POST /api/simulate` endpoint for payment simulation. Updated env with real credentials (Mimo, Xendit, Supabase). Frontend build passed successfully.
 
 **Decisions:**
 - Using Mimo AI (Xiaomi) instead of OpenAI — same OpenAI-compatible API format, just different base URL
