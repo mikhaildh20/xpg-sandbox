@@ -108,3 +108,25 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-102 — Create Supabase schema migration
+
+---
+
+## 2026-06-30 — T-102 through T-205 — Orchestrator
+
+**Completed:** All backend and AI tasks implemented in a single batch:
+- T-102: SQL migration for orders + transactions tables
+- T-103: Xendit invoice service with mock fallback
+- T-104: POST /api/chat route wired to AI handler
+- T-105: POST /api/webhook/xendit route with status mapping
+- T-106: Storage layer with Supabase CRUD + in-memory fallback
+- T-201: OpenAI client initialization
+- T-202: Function calling schema for createXenditInvoice
+- T-203: XenBot system prompt per AGENT.md spec
+- T-204: Message handler orchestrating AI → tool call → invoice → response
+- T-205: Edge case validation (min amount, off-topic, zero/negative)
+
+**Decisions:** Storage uses automatic fallback from Supabase to in-memory when tables don't exist. AI uses regex fallback when OpenAI key is missing.
+
+**Blockers:** None
+
+**Next:** T-301 through T-307 — already completed by frontend agent

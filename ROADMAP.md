@@ -15,21 +15,21 @@
 | Status | Task | Date | Commit |
 |---|---|---|---|
 | 🟢 Done | T-101: Create Express server entry point (index.js) | 2026-06-30 | `b96e8c8`
-| 🔴 Not Started | T-102: Create Supabase schema migration | | |
-| 🔴 Not Started | T-103: Build Xendit invoice service | | |
-| 🔴 Not Started | T-104: Implement POST /api/chat | | |
-| 🔴 Not Started | T-105: Implement POST /api/webhook/xendit | | |
-| 🔴 Not Started | T-106: Implement storage layer (Supabase CRUD) | | |
+| 🟢 Done | T-102: Create Supabase schema migration | 2026-06-30 | `2254277` |
+| 🟢 Done | T-103: Build Xendit invoice service | 2026-06-30 | `2254277` |
+| 🟢 Done | T-104: Implement POST /api/chat | 2026-06-30 | `2254277` |
+| 🟢 Done | T-105: Implement POST /api/webhook/xendit | 2026-06-30 | `2254277` |
+| 🟢 Done | T-106: Implement storage layer (Supabase CRUD) | 2026-06-30 | `2254277` |
 
 ## Phase 1B — AI Agent Integration (OpenAI Function Calling)
 
 | Status | Task | Date | Commit |
 |---|---|---|---|
-| 🔴 Not Started | T-201: Set up OpenAI client | | |
-| 🔴 Not Started | T-202: Define function calling schema | | |
-| 🔴 Not Started | T-203: Implement XenBot system prompt | | |
-| 🔴 Not Started | T-204: Implement message handler | | |
-| 🔴 Not Started | T-205: Edge case & validation logic | | |
+| 🟢 Done | T-201: Set up OpenAI client | 2026-06-30 | `2254277` |
+| 🟢 Done | T-202: Define function calling schema | 2026-06-30 | `2254277` |
+| 🟢 Done | T-203: Implement XenBot system prompt | 2026-06-30 | `2254277` |
+| 🟢 Done | T-204: Implement message handler | 2026-06-30 | `2254277` |
+| 🟢 Done | T-205: Edge case & validation logic | 2026-06-30 | `2254277` |
 
 ## Phase 1C — Frontend Chat UI (xpg-frontend)
 

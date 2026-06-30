@@ -15,21 +15,21 @@
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
 | T-101 | Create Express server entry point | Must | ✅ Done | Backend Agent | Server running on port 4000, health route verified |
-| T-102 | Create Supabase schema migration | Must | 🔴 Not Started | Backend Agent | |
-| T-103 | Build Xendit invoice service | Must | 🔴 Not Started | Backend Agent | |
-| T-104 | Implement POST /api/chat | Must | 🔴 Not Started | Backend Agent | |
-| T-105 | Implement POST /api/webhook/xendit | Must | 🔴 Not Started | Backend Agent | |
-| T-106 | Implement storage layer | Must | 🔴 Not Started | Backend Agent | |
+| T-102 | Create Supabase schema migration | Must | ✅ Done | Backend Agent | SQL migration for orders + transactions tables |
+| T-103 | Build Xendit invoice service | Must | ✅ Done | Backend Agent | Mock fallback when XENDIT_SECRET_KEY not set |
+| T-104 | Implement POST /api/chat | Must | ✅ Done | Backend Agent | Routes to AI handler, returns reply + invoice_url |
+| T-105 | Implement POST /api/webhook/xendit | Must | ✅ Done | Backend Agent | Receives Xendit callbacks, updates order status |
+| T-106 | Implement storage layer | Must | ✅ Done | Backend Agent | Supabase CRUD with in-memory fallback |
 
 ## Phase 1B — AI Agent Integration
 
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
-| T-201 | Set up OpenAI client | Must | 🔴 Not Started | AI Agent | |
-| T-202 | Define function calling schema | Must | 🔴 Not Started | AI Agent | |
-| T-203 | Implement XenBot system prompt | Must | 🔴 Not Started | AI Agent | |
-| T-204 | Implement message handler | Must | 🔴 Not Started | AI Agent | |
-| T-205 | Edge case & validation logic | Should | 🔴 Not Started | AI Agent | |
+| T-201 | Set up OpenAI client | Must | ✅ Done | AI Agent | OpenAI SDK initialized with function calling |
+| T-202 | Define function calling schema | Must | ✅ Done | AI Agent | createXenditInvoice tool with amount + description params |
+| T-203 | Implement XenBot system prompt | Must | ✅ Done | AI Agent | Per AGENT.md: professional, Indonesian, sandbox reminders |
+| T-204 | Implement message handler | Must | ✅ Done | AI Agent | Orchestrates: user msg → LLM → tool call → invoice → response |
+| T-205 | Edge case & validation logic | Should | ✅ Done | AI Agent | Min Rp10K, negative/zero rejection, off-topic redirect |
 
 ## Phase 1C — Frontend Chat UI
 
