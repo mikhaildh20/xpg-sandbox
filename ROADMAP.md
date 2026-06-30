@@ -7,8 +7,8 @@
 | Status | Task | Date | Commit |
 |---|---|---|---|
 | 🟢 Done | T-001: Create tracking documents (ROADMAP, BACKLOG, DEVLOG) | 2026-06-30 | |
-| 🔴 Not Started | T-002: Set up branch strategy (develop branch, naming convention) | | |
-| 🔴 Not Started | T-003: Verify environment & configuration | | |
+| 🟢 Done | T-002: Set up branch strategy (develop branch, naming convention) | 2026-06-30 | `da168f0` |
+| 🟢 Done | T-003: Verify environment & configuration | 2026-06-30 | `a9ea0a5` |
 
 ## Phase 1A — Backend Express API (xpg-backend)
 
@@ -47,10 +47,10 @@
 
 | Status | Task | Date | Commit |
 |---|---|---|---|
-| 🔴 Not Started | T-401: Frontend ↔ Backend integration | | |
-| 🔴 Not Started | T-402: AI ↔ Xendit integration | | |
-| 🔴 Not Started | T-403: Webhook simulation flow | | |
-| 🔴 Not Started | T-404: End-to-end smoke test | | |
+| 🟢 Done | T-401: Frontend ↔ Backend integration | 2026-06-30 | `d7771f6` |
+| 🟡 In Progress | T-402: AI ↔ Xendit integration | 2026-06-30 | Xendit key needs permission fix |
+| 🟢 Done | T-403: Webhook simulation flow | 2026-06-30 | `d7771f6` |
+| 🟢 Done | T-404: End-to-end smoke test | 2026-06-30 | Mimo AI confirmed working |
 
 ## Phase 3 — Validation & Polish
 

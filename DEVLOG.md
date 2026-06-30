@@ -130,3 +130,18 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-301 through T-307 — already completed by frontend agent
+
+---
+
+## 2026-06-30 — T-401 through T-404 — Orchestrator
+
+**Completed:** Integration phase — switched AI from OpenAI to Mimo (`api.mimo-v2.com/v1`, model `mimo-v2-pro`). Added `POST /api/simulate` endpoint for payment simulation. Updated env with real credentials (Mimo, Xendit, Supabase). Frontend build passed successfully.
+
+**Decisions:**
+- Using Mimo AI (Xiaomi) instead of OpenAI — same OpenAI-compatible API format, just different base URL
+- Model: `mimo-v2-pro` with function calling support
+- Simulate endpoint follows frontend's expected format: `{ order_id, status: 'paid' | 'failed' }`
+
+**Blockers:** Xendit API key (`xnd_development_...`) has `REQUEST_FORBIDDEN_ERROR` — needs "Invoice" permission enabled in Xendit Dashboard. Mimo AI and mock flow fully working.
+
+**Next:** Fix Xendit permissions, then merge to develop

@@ -47,10 +47,10 @@
 
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
-| T-401 | Frontend ↔ Backend integration | Must | 🔴 Not Started | Integration Agent | |
-| T-402 | AI ↔ Xendit integration | Must | 🔴 Not Started | Integration Agent | |
-| T-403 | Webhook simulation flow | Must | 🔴 Not Started | Integration Agent | |
-| T-404 | End-to-end smoke test | Must | 🔴 Not Started | Integration Agent | |
+| T-401 | Frontend ↔ Backend integration | Must | ✅ Done | Orchestrator | Mimo AI working, simulate endpoint added |
+| T-402 | AI ↔ Xendit integration | Must | 🟡 In Progress | Orchestrator | Xendit key needs Invoice permission in dashboard |
+| T-403 | Webhook simulation flow | Must | ✅ Done | Orchestrator | POST /api/simulate working |
+| T-404 | End-to-end smoke test | Must | ✅ Done | Orchestrator | Mimo AI → tool call → mock invoice confirmed |
 
 ## Phase 3 — Validation & Polish
 
