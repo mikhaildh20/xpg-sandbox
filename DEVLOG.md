@@ -96,3 +96,15 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** Phase 2 — Integration (T-401 onward)
+
+---
+
+## 2026-06-30 — T-101 — Orchestrator
+
+**Completed:** Created Express server entry point (index.js) with CORS, JSON parser, health route, error handler. Routes scaffolded as stubs. Server verified on port 4000.
+
+**Decisions:** Using Express 5 with Router pattern. CORS origin configurable via FRONTEND_URL env var.
+
+**Blockers:** None
+
+**Next:** T-102 — Create Supabase schema migration

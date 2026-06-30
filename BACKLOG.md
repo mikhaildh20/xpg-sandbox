@@ -14,7 +14,7 @@
 
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
-| T-101 | Create Express server entry point | Must | 🔴 Not Started | Backend Agent | |
+| T-101 | Create Express server entry point | Must | ✅ Done | Backend Agent | Server running on port 4000, health route verified |
 | T-102 | Create Supabase schema migration | Must | 🔴 Not Started | Backend Agent | |
 | T-103 | Build Xendit invoice service | Must | 🔴 Not Started | Backend Agent | |
 | T-104 | Implement POST /api/chat | Must | 🔴 Not Started | Backend Agent | |

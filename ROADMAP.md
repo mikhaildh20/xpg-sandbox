@@ -14,7 +14,7 @@
 
 | Status | Task | Date | Commit |
 |---|---|---|---|
-| 🔴 Not Started | T-101: Create Express server entry point (index.js) | | |
+| 🟢 Done | T-101: Create Express server entry point (index.js) | 2026-06-30 | `b96e8c8`
 | 🔴 Not Started | T-102: Create Supabase schema migration | | |
 | 🔴 Not Started | T-103: Build Xendit invoice service | | |
 | 🔴 Not Started | T-104: Implement POST /api/chat | | |
