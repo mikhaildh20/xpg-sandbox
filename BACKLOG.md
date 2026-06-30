@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|
 | T-001 | Create tracking documents | Must | ✅ Done | Orchestrator | |
 | T-002 | Set up branch strategy | Must | ✅ Done | Orchestrator | develop branch created from main |
-| T-003 | Verify environment & configuration | Must | 🔴 Not Started | Orchestrator | |
+| T-003 | Verify environment & configuration | Must | ✅ Done | Orchestrator | Node v24.11.0, all deps installed, env files present |
 
 ## Phase 1A — Backend Express API
 

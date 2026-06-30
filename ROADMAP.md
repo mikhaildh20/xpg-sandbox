@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 🟢 Done | T-001: Create tracking documents (ROADMAP, BACKLOG, DEVLOG) | 2026-06-30 | |
 | 🟢 Done | T-002: Set up branch strategy (develop branch, naming convention) | 2026-06-30 |
-| 🔴 Not Started | T-003: Verify environment & configuration | | |
+| 🟢 Done | T-003: Verify environment & configuration | 2026-06-30 |
 
 ## Phase 1A — Backend Express API (xpg-backend)
 
