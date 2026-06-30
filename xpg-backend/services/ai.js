@@ -126,8 +126,8 @@ async function handleWithRegex(userMessage) {
 
 async function executeInvoice(amount, description) {
   try {
-    const invoice = await createInvoice(amount, description);
     const order = await createOrder(description, amount);
+    const invoice = await createInvoice(amount, description, order.order_id);
     await createTransaction(order.order_id, invoice.xendit_id, invoice.invoice_url);
 
     return {

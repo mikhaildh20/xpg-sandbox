@@ -1,9 +1,10 @@
 const XENDIT_SECRET_KEY = process.env.XENDIT_SECRET_KEY;
 const XENDIT_API = 'https://api.xendit.co/v2/invoices';
 
-async function createInvoice(amount, description) {
+async function createInvoice(amount, description, externalId) {
   if (!XENDIT_SECRET_KEY) {
     console.warn('XENDIT_SECRET_KEY not set — returning mock invoice');
+    const id = externalId || `mock_${Date.now()}`;
     return {
       invoice_url: `https://checkout.xendit.co/mock/${Date.now()}`,
       xendit_id: `mock_${Date.now()}`,
@@ -21,6 +22,7 @@ async function createInvoice(amount, description) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
+      external_id: externalId || `order_${Date.now()}`,
       amount,
       description,
       currency: 'IDR',
