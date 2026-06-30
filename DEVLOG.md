@@ -26,3 +26,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-302 — Build split-screen layout
+
+## 2026-06-30 — T-302 — Frontend Agent
+
+**Completed:** Created SplitLayout.tsx component with CSS grid-based two-panel layout. Left/right panels via children props. Uses the .split-layout class from globals.css for responsive behavior.
+
+**Decisions:** Used CSS grid for equal column split. Left panel has right border divider. Client component for composition flexibility.
+
+**Blockers:** None
+
+**Next:** T-303 — Build Chat Room component

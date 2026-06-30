@@ -36,7 +36,7 @@
 | ID | Title | Priority | Status | Assignee | Notes |
 |---|---|---|---|---|---|
 | T-301 | Update layout & branding | Must | ✅ Done | Frontend Agent | |
-| T-302 | Build split-screen layout | Must | 🔴 Not Started | Frontend Agent | |
+| T-302 | Build split-screen layout | Must | ✅ Done | Frontend Agent | |
 | T-303 | Build Chat Room component | Must | 🔴 Not Started | Frontend Agent | |
 | T-304 | Build Invoice Viewer component | Must | 🔴 Not Started | Frontend Agent | |
 | T-305 | Implement "Simulate Success" button | Must | 🔴 Not Started | Frontend Agent | |

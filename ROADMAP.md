@@ -36,7 +36,7 @@
 | Status | Task | Date | Commit |
 |---|---|---|---|
 | 🟢 Done | T-301: Update layout & branding | 2026-06-30 | `f9b2228` |
-| 🔴 Not Started | T-302: Build split-screen layout | | |
+| 🟢 Done | T-302: Build split-screen layout | 2026-06-30 | `0cdbeda` |
 | 🔴 Not Started | T-303: Build Chat Room component | | |
 | 🔴 Not Started | T-304: Build Invoice Viewer component | | |
 | 🔴 Not Started | T-305: Implement "Simulate Success" button | | |
