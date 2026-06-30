@@ -36,3 +36,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-303 — Build Chat Room component
+
+## 2026-06-30 — T-303 — Frontend Agent
+
+**Completed:** Created ChatRoom.tsx component with scrollable message list, user/bot message styling, input field with send button, loading dots animation, and auto-scroll behavior.
+
+**Decisions:** Used TailwindCSS for styling. Messages shown with bubble layout - user messages right-aligned (blue), bot messages left-aligned (gray) with XenBot name label. Loading indicator uses animated bouncing dots.
+
+**Blockers:** None
+
+**Next:** T-304 — Build Invoice Viewer component
