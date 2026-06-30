@@ -56,3 +56,13 @@ Format: `YYYY-MM-DD HH:MM UTC — T-XXX — Agent`
 **Blockers:** None
 
 **Next:** T-305 — Implement "Simulate Success" button
+
+## 2026-06-30 — T-305 — Frontend Agent
+
+**Completed:** Added simulate success and failure buttons to InvoiceView. Includes loading spinner while processing, checkmark/X animation on result, auto-dismiss after 3 seconds. Both buttons call parent callbacks with orderId.
+
+**Decisions:** Combined with InvoiceView for cohesive UX. uses simulateResult state for feedback animation. Timeout auto-clears result after 3s.
+
+**Blockers:** None
+
+**Next:** T-306 — Create chat API client service
